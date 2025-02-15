@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="frankaudit.xslt"?>
+<Object name="Person">
+  <Attribute name="title" type="String">
+    <Scalar>Senior BA</Scalar>
+  </Attribute>
+  <Attribute name="acmegroups" type="String">
+    <Scalar>group1</Scalar>
+  </Attribute>
+  <Attribute name="AttributeChangeOperation" type="Object">
+    <Object name="AttributeChangeOperation.operation.replace">
+      <Attribute name="acmegroups" type="String">
+        <Scalar>group2</Scalar>
+        <Scalar>group3</Scalar>
+        <Scalar>group4</Scalar> 
+      </Attribute>
+    </Object> 
+  </Attribute>
+  <Attribute name="AttributeChangeOperation" type="Object">
+    <Object name="AttributeChangeOperation.operation.remove">
+      <Attribute name="title" type="String"></Attribute>
+    </Object>
+  </Attribute>
+  <Attribute name="AttributeChangeOperation" type="Object">
+    <Object name="AttributeChangeOperation.operation.add">
+      <Attribute name="acmepositionnumber" type="String">
+        <Scalar>99999999</Scalar>
+      </Attribute>
+    </Object>
+  </Attribute>
+</Object>
